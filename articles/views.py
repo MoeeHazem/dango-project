@@ -4,7 +4,7 @@ from .models import Article
 
 def article_search_view(request):
     context = {}
-    return render(request, "search.html", context=context)
+    return render(request, "articles/search.html", context=context)
 def article_detail_view(request, id=None):
     article_obj = None
     if id is not None:  
